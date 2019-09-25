@@ -33,6 +33,12 @@ https://web.plus-idea.net/2018/04/google-apps-script-xmlservice-parse/
 
 セオリーっぽいが、面倒臭い
 
+### IMPORTXML
+
+https://support.google.com/docs/answer/3093342
+
+どうせGASを書くなら、スプレッドシート無しでGASだけで済ませたい
+
 ### querySelectorAllのようなもの
 
 調べたけどなさそう
