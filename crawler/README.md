@@ -1,21 +1,37 @@
 # crawler
 
-- 定期的にhtmlを取得して、特定の要素の数と内容を取得したい
+- 定期的にhtmlを取得して、特定の要素の内容と数を取得したい
 - お金はかけたく無い
 - 極力手軽に済ませたい
 - 結果を通知したい
 
 ## 候補手段
 
-### コードかかずに済ませたい
+### スクレイピングサービス
 
 https://www.octoparse.jp/
 
-スクレイピングサービス
-
 無料トライアルと書いていたけど、14日後に自動的に有料プランに移行されるらしい
 
-お金をかけるならAWS Lambdaでもいいので使わない
+お金をかけるならAWS Lambdaでもいいので今回は使わない
+
+### AWS Lambda
+
+できるけど、もっとお手軽にすませたい
+
+### GAS
+
+トリガーもあるし、Gmailも簡単に送れるし、何とかなりそう
+
+## GASで特定の要素を取得する候補手段
+
+### XMLパースして1階層ずつたどっていく
+
+https://web.plus-idea.net/2018/04/google-apps-script-xmlservice-parse/
+
+`rootDoc.getChild('Body', nsSoapenv).getChild('loginResponse', ...`
+
+セオリーっぽいが、面倒臭い
 
 ### querySelectorAllのようなもの
 
